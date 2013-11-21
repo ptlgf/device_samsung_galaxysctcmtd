@@ -49,8 +49,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
 
+# Verizon cdma stuff
+PRODUCT_PROPERTY_OVERRIDES += \
+       ro.cdma.home.operator.numeric=310004 \
+       ro.cdma.home.operator.alpha=Verizon \
+       net.cdma.pppd.user=user[SPACE]VerizonWireless
+
 # Inherit Aries common device configuration.
-$(call inherit-product, device/samsung/aries-common/device_base.mk)
+$(call inherit-product, device/samsung/galaxysctcmtd/device_base.mk)
 
 # See comment at the top of this file. This is where the other
 # half of the device-specific product definition file takes care
