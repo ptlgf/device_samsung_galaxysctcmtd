@@ -42,7 +42,7 @@ TARGET_BOOTLOADER_BOARD_NAME := aries
 BOARD_MOBILEDATA_INTERFACE_NAME := "ppp0"
 
 # Kernel Source
-TARGET_KERNEL_SOURCE := kernel/samsung/aries
+TARGET_KERNEL_SOURCE := kernel/samsung/ariesctc
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/galaxysctcmtd
@@ -129,6 +129,9 @@ BOARD_CUSTOM_VSYNC_IOCTL := true
 
 # Suspend in charger to disable capacitive keys
 BOARD_CHARGER_ENABLE_SUSPEND := true
+
+# Required for TV out
+COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \

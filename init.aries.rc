@@ -190,8 +190,9 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
-service aries-ril-daemon /system/bin/rild
-    class core
+#service aries-ril-daemon /system/bin/rild
+#   class core
+service aries-ril-daemon /system/bin/rild -l /system/lib/libsec-ril-cdma.so -m 7777 -- -d /dev/ttyS0 -D 7203 -l RIL1/CDMA -M no
     socket rild stream 660 root radio
     socket rild-debug stream 660 radio system
     user root

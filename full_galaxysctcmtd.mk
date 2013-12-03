@@ -34,4 +34,4 @@ PRODUCT_NAME := full_galaxysctcmtd
 PRODUCT_DEVICE := galaxysctcmtd
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SCH-I909
+PRODUCT_MODEL := SCH-i909

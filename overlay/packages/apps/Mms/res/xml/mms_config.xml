@@ -6,7 +6,7 @@
 	<int name="maxImageHeight">1920</int>
 	<int name="maxImageWidth">2560</int>
 	<string name="uaProfUrl">http://wap.samsungmobile.com/uaprof/GT-i9000.xml</string>
-	<string name="userAgent">SAMSUNG-SCH-I909-Mms/2.0</string>
+	<string name="userAgent">SAMSUNG-SCH-i909-Mms/2.0</string>
 	<int name="recipientLimit">20</int>
 	<int name="smsToMmsTextThreshold">7</int>
 	<string name="emailGatewayNumber">6245</string>
