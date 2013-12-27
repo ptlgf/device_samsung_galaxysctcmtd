@@ -51,10 +51,9 @@ PRODUCT_COPY_FILES += \
 
 # Verizon cdma stuff
 PRODUCT_PROPERTY_OVERRIDES += \
-       ro.cdma.home.operator.numeric=310004 \
-       ro.cdma.home.operator.alpha=Verizon \
-       net.cdma.pppd.user=user[SPACE]VerizonWireless
-
+       ro.cdma.home.operator.numeric=46003 \
+       ro.cdma.home.operator.alpha=中国电信 \
+#       net.cdma.pppd.user=user ctnet@mycdma.cn
 # Inherit Aries common device configuration.
 $(call inherit-product, device/samsung/galaxysctcmtd/device_base.mk)
 

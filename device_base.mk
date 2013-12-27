@@ -172,14 +172,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
        ro.ril.samsung_cdma=true \
        ro.telephony.ril_class=SamsungExynos3RIL \
        ro.telephony.ril.v3=datacall \
-       ro.bq.gpu_to_cpu_unsupported=1
 # These are the hardware-specific settings that are stored in system properties.
 # Note that the only such settings should be the ones that are too low-level to
 # be reachable from resources or other mechanisms.
 PRODUCT_PROPERTY_OVERRIDES += \
        wifi.interface=wlan0 \
-       ro.vold.switchablepair=/mnt/emmc,/mnt/sdcard \
-       ro.bq.gpu_to_cpu_unsupported=1 \
+        ro.vold.switchablepair=/mnt/emmc,/mnt/sdcard \
+
+        ro.bq.gpu_to_cpu_unsupported=1 \
+
+        ro.config.low_ram=true \
+
+       ro.zram.default=18 
 
 # SGX540 is slower with the scissor optimization enabled
 PRODUCT_PROPERTY_OVERRIDES += \
